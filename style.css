@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tondo", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #262527;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li
+{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    width: 144px;
+    height: 32.07px;
+}
+
+body {
+    background-color: #262527;
+    color: #e3e6f3;
+}
+
+.card {
+    padding: 10px 15px;
+    margin: 0 10px;
+    position: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.flashcard {
+    background-color: white;
+    border: 0;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    color: #262527;
+    padding: 10px 20px;
+    
+}
+
+.progress-bar{
+    height: 20px;
+    padding: 2px;
+    background-color: #ccc;
+    display: flex;
+    --progress: 75;
+}
+
+.progress-bar::before{
+    content: "";
+    width: calc(var(--progress) * 1%);
+    background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+}
+
